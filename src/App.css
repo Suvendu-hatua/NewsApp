@@ -1,7 +1,20 @@
 .App {
   text-align: center;
 }
-
+.card-text{
+  font-family: 'Neuton';
+  font-size:large;
+}
+.card a{
+  font-weight: bold;
+}
+nav{
+  font-family:cursive;
+  position:fixed;
+}
+.navbar-brand{
+  font-weight: bolder;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -27,12 +40,32 @@
 .App-link {
   color: #61dafb;
 }
+.card{
+  transition: transform .3s;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+.btn{
+  transition: transform .3s;
+}
+.btn:hover{
+  transform: scale(1.1);
+  background-color: rgb(14, 113, 14);
+  border-color:rgb(14, 113, 14) ;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.row{
+  padding:0  90px;
+}
+.news-container h2{
+ margin-top: 100px;
+ margin-bottom: 25px;
+  font-family:cursive;
+  font-weight: bolder;
+}
+@media only screen and (max-width: 600px)  {
+  .row{
+    padding:0 15px;
   }
 }
