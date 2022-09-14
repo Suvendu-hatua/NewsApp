@@ -49,7 +49,7 @@ function News(props) {
     }
     return (
         <div className='news-container container my-3'>
-            <h2 className='text-center'>NewsMonkey - Top {capitalize(props.category)} Headlines</h2>
+            <h2 className='text-center'>NewsApp - Top {capitalize(props.category)} Headlines</h2>
             {loading ? <Spinner /> : null}
             <InfiniteScroll
                 dataLength={articles.length}
@@ -57,7 +57,7 @@ function News(props) {
                 hasMore={articles.length !== totalResults}
                 loader={<Spinner />}
             >
-                <div className="row">
+                <div className="row my-3">
                     {articles.map((article, index) => {
                         return <div className="col-md-4"  key={index}>
                             <NewsItem title={article.title} desc={article.description} source={article.source.name} author={article.author} date={article.publishedAt} imageToUrl={article.urlToImage} url={article.url} />
